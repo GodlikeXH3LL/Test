@@ -19,6 +19,7 @@ textbox.Position = UDim2.new(0.5, 0, 0.4, 0)
 textbox.AnchorPoint = Vector2.new(0.5, 0.5)
 textbox.BackgroundColor3 = Color3.fromRGB(128, 128, 128)
 textbox.PlaceholderText = "Enter Key"
+textbox.CornerRadius = Udim2.new(0, 10)
 textbox.TextScaled = true
 textbox.BorderSizePixel = 0
 textbox.Parent = frame
@@ -30,6 +31,7 @@ input.AnchorPoint = Vector2.new(0.5, 0.5)
 input.BackgroundColor3 = Color3.fromRGB(128, 128, 128)
 input.Text = "Submit"
 input.TextScaled = true
+input.CornerRadius = Udim2.new(0, 10)
 input.BorderSizePixel = 0
 input.Parent = frame
 
@@ -37,6 +39,9 @@ input.MouseButton1Click:Connect(function()
     local text = textbox.Text
     if text == "H3LL" then   
         screenGui:Destroy()
+end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GodlikeXH3LL/H3LL-Ninja-Legend-V1/refs/heads/main/By%20Godlike.txt"))()
+end
     else
         textbox.Text = ""
         textbox.PlaceholderText = "Key Incorrect"
